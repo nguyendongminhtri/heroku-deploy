@@ -2,7 +2,7 @@ package com.example.demo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.NaturalId;
-import org.hibernate.validator.constraints.NotBlank;
+
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
