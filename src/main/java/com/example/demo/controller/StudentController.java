@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/student")
-public class HomeController {
+public class StudentController {
     @Autowired
     StudentServiceImpl studentService;
     @GetMapping()
