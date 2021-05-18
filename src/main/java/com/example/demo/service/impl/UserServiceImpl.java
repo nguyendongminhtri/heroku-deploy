@@ -27,6 +27,11 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
+    public Optional<User> findById(Long id) {
+        return userRepository.findById(id);
+    }
+
+    @Override
     public Iterable<User> findUsersByNameContaining(String user_name) {
         return userRepository.findUsersByNameContaining(user_name);
     }

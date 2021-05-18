@@ -9,13 +9,23 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-
-    public Student(Long id, String name) {
+    @ManyToOne
+    User user;
+    public Student(Long id, String name, User user) {
         this.id = id;
         this.name = name;
+        this.user = user;
     }
 
     public Student() {
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public User getUser() {
+        return user;
     }
 
     public Long getId() {
