@@ -96,6 +96,6 @@ public class AuthController {
         user.setRoles(roles);
         userService.save(user);
 
-        return new ResponseEntity<>(new ResponseMessage("yes"), HttpStatus.OK);
+        return new ResponseEntity<>(new ResponseMessage("success"), HttpStatus.OK);
     }
 }
